@@ -223,6 +223,7 @@ class D4():
                 if self.test_dataset.split =='pair_test':
 
                     name = self.test_dataset.load_name(index)[:-4]+'.png'
+                    print(f'processing {name}')
 
                     clean_images, hazy_images = self.cuda(*items)
                     index += 1
